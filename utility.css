@@ -1,0 +1,33 @@
+.border {
+    border: 2px solid red;
+}
+
+.flex {
+    display: inline-flex;
+}
+
+.block {
+    display: block;
+}
+
+.grey {
+    background-color: #1c1c1c;
+}
+
+.b-radius {
+    border-radius: 20px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.text {
+    color: rgb(222, 213, 213);
+}
+.font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font2{
+    color: #b3b3b3
+}
