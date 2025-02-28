@@ -43,21 +43,23 @@ body {
 }
 
 .right {
-    margin: 10px;
-    width: 73vw;
+    margin-top: 53px;
+    width: 74vw;
     min-height: 100vh;
     height: auto !important;
     position: relative;
-    left: 359px;
-    top: 43px;
-    z-index: -1;
-    background-attachment: fixed;
+    left: 370px;
+    z-index: 2;
     flex-direction: column;
     display: flex;
     padding: 10px;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
     overflow-x: hidden; 
-    max-height: calc(100vh - 43px); /* Adjust max height */
+    max-height: calc(100vh - 43px); 
+}
+.right::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
 }
 .playlists {
     display: flex;
