@@ -35,7 +35,7 @@ body {
     margin-left: -200px;
     margin: 10px;
     width: 23vw;
-    height: 90vh;
+    height: 91vh;
     position: fixed;
     top: 50px;
     flex-direction: column;
@@ -43,11 +43,11 @@ body {
 }
 
 .right {
-    margin-top: 53px;
+    margin-top: 39px;
     width: 74vw;
-    min-height: 100vh;
-    height: auto !important;
-    position: relative;
+    min-height: 88vh;
+    height: 70vh !important;
+    position: fixed;
     left: 370px;
     z-index: 2;
     flex-direction: column;
@@ -55,7 +55,7 @@ body {
     padding: 10px;
     overflow-y: auto; 
     overflow-x: hidden; 
-    max-height: calc(100vh - 43px); 
+    max-height: calc(70vh - 43px); 
 }
 .right::-webkit-scrollbar {
     display: none;
@@ -76,13 +76,12 @@ body {
 
 
 .card {
-    width: 200px;
-    flex-direction: column;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 215px;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
 }
 
 .card-img {
