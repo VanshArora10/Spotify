@@ -12,7 +12,8 @@ body {
     margin-top: 15px;
     background-color: black;
 }
-.container{
+
+.container {
     width: 100%;
     margin-left: -10px;
     height: auto;
@@ -53,14 +54,16 @@ body {
     flex-direction: column;
     display: flex;
     padding: 10px;
-    overflow-y: auto; 
-    overflow-x: hidden; 
-    max-height: calc(70vh - 43px); 
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(70vh - 43px);
 }
+
 .right::-webkit-scrollbar {
     display: none;
     /* For Chrome, Safari, and Opera */
 }
+
 .playlists {
     display: flex;
     flex-wrap: wrap;
@@ -69,19 +72,19 @@ body {
     justify-content: flex-start;
     /* Ensures alignment */
 }
+
 .Spot {
     padding: 10px;
 }
 
-
-
 .card {
     width: 215px;
-        flex-direction: column;
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
 }
 
 .card-img {
@@ -92,6 +95,39 @@ body {
 
 .card p {
     margin-top: -15px;
+}
+
+.play-button {
+    position: absolute;
+    top: 56%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    background-color: #1ed760;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .play-button {
+    opacity: 1;
+}
+
+.icon {
+    display: flex;
+    margin-left: 4px;
+}
+
+.play-button:hover {
+    background-color: #5fda8c;
 }
 
 .logo {
@@ -337,3 +373,64 @@ body {
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(2px);
 }
+
+.playbar {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.play-btn {
+    height: 50px;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.Songs-list {
+    margin-top: -27px;
+    margin-left: -30px;
+    width: 100%;
+    position: relative;
+}
+
+.Songs-list li {
+    margin-top: 10px;
+    border: 2px solid #ded5d5;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 10px;
+}
+.left-songss{
+    align-items: center;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.music {
+    filter: invert(1);
+    height: 45px;
+}
+
+.play-img{
+    height: 30px;
+}
+.play-now{
+    align-items: center;
+    
+}
+.play-now span{
+  margin-right: 6px;
+   
+}
+.left-song-list{
+    align-items: center;
+    max-width: 200px;
+}
+
+
+
