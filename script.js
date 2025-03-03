@@ -26,7 +26,7 @@ async function main() {
         songul.innerHTML = songul.innerHTML + `<li class="left-songss font flex text">
                        <div class=" left-song-list flex">
                         <img src="Music.png" class="music flex" alt="">
-                        <div class="song-info flex">${song.replaceAll("http://127.0.0.1:3000/Songs/", "")}</div>
+                        <div class="song-info flex">${song.replaceAll("Songs/", "")}</div>
                        </div>
                         <div class="play-now flex">
                             <span>Play Now</span>
@@ -36,7 +36,7 @@ async function main() {
     }
 
     Array.from(document.getElementsByClassName("play-now")).forEach((element) => {
-    console.log(element)
+    console.log
     })
 }
 main()
