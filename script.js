@@ -3,7 +3,7 @@ document.getElementsByClassName("search-img")[0].addEventListener("click", funct
 })
 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:3000/songs/")
+    let a = await fetch("Songs/")
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
@@ -34,6 +34,10 @@ async function main() {
                         </div>
                     </li>`
     }
+
+    Array.from(document.getElementsByClassName("play-now")).forEach((element) => {
+    console.log(element)
+    })
 }
 main()
 
