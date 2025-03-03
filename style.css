@@ -373,6 +373,10 @@ body {
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(2px);
 }
+.play-next {
+    display: flex;
+    gap: 20px;
+}
 
 .playbar {
     color: white;
@@ -407,7 +411,7 @@ body {
 .play-btn {
     height: 30px;
     filter: invert(1);
-    /* opacity: 0.8; */
+    cursor: pointer;
 }
 
 .Songs-list {
@@ -461,4 +465,7 @@ body {
 .left-song-list {
     align-items: center;
     max-width: 200px;
+}
+.song-info{
+    cursor: pointer;
 }
