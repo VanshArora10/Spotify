@@ -377,16 +377,18 @@ body {
 .playbar {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     display: inline-flex;
     justify-content: center;
     gap: 15px;
-    width: 100%;
+    width: 97%;
     padding: 10px;
+    background-color: #3e3b3b;
+    border-radius: 30px;
 }
 
 .play-btn {
-    height: 50px;
+    height: 30px;
     filter: invert(1);
     opacity: 0.8;
 }
@@ -396,6 +398,14 @@ body {
     margin-left: -30px;
     width: 100%;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 74%;
+    padding-right: 100px;
+}
+
+.Songs-list::-webkit-scrollbar {
+    display: none;
 }
 
 .Songs-list li {
@@ -405,10 +415,11 @@ body {
     list-style-type: none;
     padding: 10px;
 }
-.left-songss{
+
+.left-songss {
     align-items: center;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .music {
@@ -416,21 +427,21 @@ body {
     height: 45px;
 }
 
-.play-img{
+.play-img {
     height: 30px;
 }
-.play-now{
+
+.play-now {
     align-items: center;
-    
+
 }
-.play-now span{
-  margin-right: 6px;
-   
+
+.play-now span {
+    margin-right: 6px;
+
 }
-.left-song-list{
+
+.left-song-list {
     align-items: center;
     max-width: 200px;
 }
-
-
-
