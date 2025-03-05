@@ -7,6 +7,14 @@ document.getElementsByClassName("search-img")[0].addEventListener("click", funct
 let currentsong = new Audio()
 
 
+function formatTime(seconds) {
+    seconds = Math.floor(seconds); // Eliminate milliseconds
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
+
+
 async function getsongs() {
     let a = await fetch("http://127.0.0.1:3000/Songs")
     let response = await a.text()
@@ -25,8 +33,15 @@ async function getsongs() {
 
 const playMusic = (track) => {
     currentsong.src = `http://127.0.0.1:3000/Songs/${track}`
+    document.querySelector(".controls").classList.add("show")
     currentsong.play()
     play.src = "pause.png"
+    document.querySelector(".song-name").innerHTML = track
+    document.querySelector(".song-time").innerHTML = currentsong.duration
+    currentsong.addEventListener("timeupdate", function () {
+        document.querySelector(".song-time").innerHTML = formatTime(currentsong.currentTime) + " / " + formatTime(currentsong.duration)
+        document.querySelector(".circle").style.left = `${(currentsong.currentTime / currentsong.duration) * 100}%`
+    })
 }
 
 

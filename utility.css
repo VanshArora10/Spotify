@@ -31,3 +31,9 @@
 .font2{
     color: #b3b3b3
 }
+.fixed{
+    position: fixed;
+}
+.remove {
+    display: none;
+}
